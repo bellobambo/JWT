@@ -1,4 +1,20 @@
 GET http://localhost:3000
 
-###
-GET http://localhost:3000/abc
+###Login Route
+POST http://localhost:3000/auth/login
+
+
+###Register Route
+POST http://localhost:3000/auth/register
+
+
+###Refresh-token Route
+POST http://localhost:3000/auth/refresh-token
+
+
+###Logout Route
+DELETE  http://localhost:3000/auth/logout
+
+
+
+
