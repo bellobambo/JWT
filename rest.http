@@ -1,5 +1,6 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkzNDI4NDEsImV4cCI6MTY5OTM0NjQ0MSwiYXVkIjoiNjU0ODhiYTk1NGY4YWJmMDZlYjM1OThmIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.HuwriFEi0CSQZCpz2aHs3y1HCOTQuviTTr7UReYa5to
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTk0Mzc0MjUsImV4cCI6MTY5OTQzNzQ1NSwiYXVkIjoiNjU0ODhiYTk1NGY4YWJmMDZlYjM1OThmIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.iMtOzSwqls5PdzFgq04ru-7RSpTombciD9R_F4eVLqY
+
 
 ###Login Route
 POST http://localhost:3000/auth/login
@@ -10,23 +11,34 @@ Content-Type: application/json
     "password" : "122fs"
 }
 
-
 ###Register Route
 POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email" : "bola20019@gmail.com",
-    "password" : "122fs"
+    "email" : "bop9@gmail.com",
+    "password" : "122fs811"
 }
 
 
 ###Refresh-token Route
 POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTk0Mzc0MjUsImV4cCI6MTczMDk5NTAyNSwiYXVkIjoiNjU0ODhiYTk1NGY4YWJmMDZlYjM1OThmIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.hO2pPg85ZgaIaoGxcLZ2d35yVGxJf67JKj8iYJCmJaM"
+}
+
+
 
 
 ###Logout Route
 DELETE  http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTk0Mzc0MjUsImV4cCI6MTczMDk5NTAyNSwiYXVkIjoiNjU0ODhiYTk1NGY4YWJmMDZlYjM1OThmIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.hO2pPg85ZgaIaoGxcLZ2d35yVGxJf67JKj8iYJCmJaM"
+}
 
 
 
